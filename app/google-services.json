@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "664860258434",
+    "firebase_url": "https://wordmate-993dc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "wordmate-993dc",
+    "storage_bucket": "wordmate-993dc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664860258434:android:5a5cf0f3ad71723cc2049b",
+        "android_client_info": {
+          "package_name": "com.example.engapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664860258434-kvm4j3q0joo6j75k0n90rlcibfadn0fg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.engapp",
+            "certificate_hash": "6d3e47bec6b06640186b4d45efb9889a982d11ae"
+          }
+        },
+        {
+          "client_id": "664860258434-0evdpmf85d8m55d0o87r65flr17nnts2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuhlZ3s7DWDxWTBKqd0ojU5cHzXeVFbfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664860258434-0evdpmf85d8m55d0o87r65flr17nnts2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
