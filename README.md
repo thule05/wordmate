@@ -13,17 +13,21 @@ Built with Java and XML for Android, WordMate also integrates Firebase for accou
 - Account authentication: Sign up and sign in using email/password, Google, or Facebook.
 - Cloud synchronization: Restore and sync supported user learning data with Firebase.
 - Personalization: Configure app language, sound, reminders, and light/dark appearance.
+
 ## Tech Stack
-Category	Technologies
-Platform	Android (minimum SDK 24; target SDK 36)
-Languages	Java, XML, Kotlin DSL (Gradle configuration)
-UI	AndroidX, Material Components, RecyclerView, ConstraintLayout
-Authentication	Firebase Authentication, Google Sign-In, Facebook Login
-Cloud data	Firebase Realtime Database
-Networking	Retrofit, Gson
-External APIs	Free Dictionary API, Datamuse API
-Image loading	Glide
-Build tools	Gradle, Android Gradle Plugin
+
+| Category | Technologies |
+|----------|--------------|
+| Platform | Android (Min SDK 24, Target SDK 36) |
+| Languages | Java, XML, Kotlin DSL |
+| UI | AndroidX, Material Components, RecyclerView, ConstraintLayout |
+| Authentication | Firebase Authentication, Google Sign-In, Facebook Login |
+| Database | Firebase Realtime Database |
+| Networking | Retrofit, Gson |
+| APIs | Free Dictionary API, Datamuse API |
+| Image Loading | Glide |
+| Build Tools | Gradle, Android Gradle Plugin |
+
 
 
 
