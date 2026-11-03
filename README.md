@@ -1,18 +1,24 @@
-# WordMate — English Vocabulary Learning App
-WordMate is an Android application designed to make English vocabulary learning more engaging and organized. It combines topic-based vocabulary lessons, interactive flashcards, practice games, dictionary search, and progress tracking in one mobile app.
 
-Built with Java and XML for Android, WordMate also integrates Firebase for account authentication and user-data synchronization.
+# WordMate - English Vocabulary Learning App
+
+WordMate is an Android application designed to help users learn and improve their English vocabulary through interactive learning methods.
+
+The application combines topic-based vocabulary lessons, flashcards, vocabulary games, dictionary search, and learning progress tracking in one platform.
+
+WordMate is developed using **Java and XML** for Android, with **Firebase** integration for authentication and user data synchronization.
+
 ## Features
-- Topic-based vocabulary: Explore curated English vocabulary organized by topic, with pronunciation, meanings, and example sentences.
-- Interactive flashcards: Review words, reveal their meanings, listen to pronunciation, shuffle cards, and mark words as learned.
-- Vocabulary games: Practice with multiple-choice quizzes, missing-letter exercises, and word–meaning matching.
-- Dictionary search: Look up English words through an online dictionary and receive search suggestions.
-- Favorite word lists: Create and manage personalized collections for future review.
-- Learning dashboard: Track learned words, review needs, study time, daily goals, weekly progress, and learning streaks.
-- Study reminders: Set daily notifications to develop consistent learning habits.
-- Account authentication: Sign up and sign in using email/password, Google, or Facebook.
-- Cloud synchronization: Restore and sync supported user learning data with Firebase.
-- Personalization: Configure app language, sound, reminders, and light/dark appearance.
+
+- **Topic-based Vocabulary:** Learn English vocabulary organized by topics, including pronunciation, meanings, and example sentences.
+- **Interactive Flashcards:** Review vocabulary through flashcards with pronunciation, shuffling, and learning status tracking.
+- **Vocabulary Games:** Practice vocabulary using multiple-choice quizzes, missing-letter exercises, and word-matching games.
+- **Dictionary Search:** Search for English words, view definitions, and receive word suggestions.
+- **Favorite Word Lists:** Save and organize vocabulary into personalized collections for review.
+- **Learning Dashboard:** Monitor learned words, study time, daily goals, weekly progress, and learning streaks.
+- **Study Reminders:** Receive daily notifications to maintain consistent learning habits.
+- **User Authentication:** Register and log in using email/password, Google, or Facebook.
+- **Cloud Synchronization:** Synchronize supported learning data using Firebase.
+- **Personalization:** Customize application language, sound, notifications, and appearance.
 
 ## Tech Stack
 
@@ -28,28 +34,26 @@ Built with Java and XML for Android, WordMate also integrates Firebase for accou
 | Image Loading | Glide |
 | Build Tools | Gradle, Android Gradle Plugin |
 
-
-
-
 ## Project Structure
 
 ```text
 wordmate/
 ├── app/
-│   ├── src/main/
-│   │   ├── java/com/example/engapp/
-│   │   │   ├── activities/       # App screens and user flows
-│   │   │   ├── fragments/        # Main navigation screens
-│   │   │   ├── adapters/         # RecyclerView adapters
-│   │   │   ├── models/           # Data models
-│   │   │   ├── network/          # API clients and services
-│   │   │   ├── repositories/     # Data access and persistence
-│   │   │   ├── receivers/        # Notification and boot receivers
-│   │   │   └── utils/            # Shared utilities
-│   │   ├── assets/
-│   │   │   └── vocabulary.json
-│   │   ├── res/
-│   │   └── AndroidManifest.xml
+│   ├── src/
+│   │   └── main/
+│   │       ├── java/com/example/engapp/
+│   │       │   ├── activities/       # Application screens
+│   │       │   ├── fragments/        # Navigation screens
+│   │       │   ├── adapters/         # RecyclerView adapters
+│   │       │   ├── models/           # Data models
+│   │       │   ├── network/          # API services
+│   │       │   ├── repositories/     # Data management
+│   │       │   ├── receivers/        # Notification receivers
+│   │       │   └── utils/            # Utility classes
+│   │       ├── assets/
+│   │       │   └── vocabulary.json   # Vocabulary dataset
+│   │       ├── res/                  # Application resources
+│   │       └── AndroidManifest.xml
 │   ├── google-services.json
 │   └── build.gradle.kts
 ├── gradle/
@@ -59,59 +63,184 @@ wordmate/
 └── gradlew.bat
 ```
 
-
 ## Getting Started
-Prerequisites
-- Android Studio with an Android SDK compatible with this project
-- JDK 17 or the compatible JDK configured by Android Studio
-- Android device or emulator running Android 7.0 (API 24) or newer
-- Internet connection for online dictionary search and cloud-based features
-1. Clone the repository
+
+### Prerequisites
+
+Before running the project, make sure you have:
+
+- Android Studio installed
+- JDK 17 or a compatible JDK
+- Android SDK configured
+- Android emulator or physical device running Android 7.0 (API 24) or higher
+- Internet connection for API and Firebase features
+
+### 1. Clone the Repository
+
+Clone the project from GitHub:
+
+```bash
 git clone https://github.com/thule05/wordmate.git
+```
+
+Navigate to the project directory:
+
+```bash
 cd wordmate
-2. Open the project
+```
+
+### 2. Open the Project in Android Studio
+
 1. Launch Android Studio.
-2. Choose Open and select the cloned wordmate folder.
-3. Let Gradle sync and download the required dependencies.
-4. Install any Android SDK components requested by Android Studio.
-3. Configure Firebase authentication (when using your own backend)
-The repository contains an Android Firebase configuration associated with the original project. To connect a separate Firebase project:
-1. Create a project in the Firebase Console.
-2. Register an Android app with the package name com.example.engapp (or update the application ID accordingly).
-3. Replace app/google-services.json with your project's configuration file.
-4. Enable the required Firebase Authentication providers and set up Firebase Realtime Database with appropriate security rules.
-5. For Google and Facebook login, configure the relevant OAuth/app settings and Android signing-key fingerprints for your environment.
-Firebase sign-in and data synchronization depend on the corresponding backend configuration and access permissions. Do not add private credentials or service-account keys to the repository.
+2. Select **Open**.
+3. Navigate to the cloned `wordmate` directory.
+4. Wait for Gradle synchronization to complete.
+5. Install any missing SDK components if prompted.
 
-4. Build and run
-Select an Android emulator or connected device, then click Run ▶ in Android Studio.
+### 3. Configure Firebase
 
-Alternatively, from the project root, build a debug APK:
+WordMate uses Firebase for user authentication and data synchronization.
 
-Windows
+To configure your own Firebase project:
+
+1. Visit the [Firebase Console](https://console.firebase.google.com/).
+2. Create a new Firebase project.
+3. Register an Android application with the package name `com.example.engapp`, or update the application ID accordingly.
+4. Download the `google-services.json` configuration file.
+5. Place the file in the `app/` directory.
+6. Enable the required authentication providers in Firebase Authentication.
+7. Configure Firebase Realtime Database and its security rules.
+8. Configure Google and Facebook authentication credentials if these login methods are required.
+
+**Note:** Firebase authentication and synchronization require valid project configuration and appropriate permissions. Do not commit private credentials or service-account keys.
+
+### 4. Build and Run
+
+**Option 1: Using Android Studio**
+
+1. Connect an Android device or start an emulator.
+2. Select the target device.
+3. Click **Run** in Android Studio.
+4. Wait for the application to build and launch.
+
+**Option 2: Using the Command Line**
+
+For Windows:
+
+```powershell
 .\gradlew.bat assembleDebug
-macOS / Linux
+```
+
+For macOS/Linux:
+
+```bash
 ./gradlew assembleDebug
-The output APK is typically located at app/build/outputs/apk/debug/app-debug.apk.
-##How to Use
-1. Open WordMate and complete the initial onboarding steps.
-2. Explore vocabulary topics on the Home screen.
-3. Open a topic and study individual words with Flashcards.
-4. Practice your knowledge using one of the three Games modes.
-5. Use Search to look up other words and save them to a favorite list.
-6. Review your learning statistics in Dashboard.
-7. Customize notifications and preferences in Settings; sign in to use account-based synchronization.
-##Application Design
-WordMate separates screen logic, data access, and shared functionality:
-- Activities / Fragments: User interface and navigation.
-- Adapters / Models: Presentation of vocabulary and structured data.
-- Repositories: Vocabulary loading, preferences, favorites, progress, and cloud synchronization.
-- Network: Retrofit services for dictionary and word-suggestion APIs.
-- Utilities / Receivers: Text-to-speech, reminders, localization, and supporting functions.
-The built-in vocabulary dataset is stored in app/src/main/assets/vocabulary.json; online search uses the Free Dictionary and Datamuse APIs.
-##Screenshots
-Screenshots have not been added yet. You can create a screenshots/ folder and include images of Home, Flashcards, Games, Search, and Dashboard here.
-##Author
-@thule05
-##License
-No license file has been specified in this repository. Please contact the repository owner before reusing or redistributing the source code beyond what applicable law permits.
+```
+
+After a successful build, the debug APK is typically generated at:
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
+
+## How to Use
+
+### 1. Explore Vocabulary
+
+- Open the application.
+- Browse vocabulary topics on the Home screen.
+- Select a topic to view its vocabulary list.
+- Explore word meanings, pronunciation, and examples.
+
+### 2. Learn with Flashcards
+
+- Select a vocabulary topic.
+- Open the Flashcard learning mode.
+- Flip cards to reveal word meanings.
+- Listen to word pronunciation.
+- Mark words as learned and review them when needed.
+
+### 3. Practice with Vocabulary Games
+
+Choose from the available practice modes:
+
+- **Multiple Choice:** Select the correct answer from multiple options.
+- **Missing Letters:** Complete words by filling in missing letters.
+- **Word Matching:** Match vocabulary words with their corresponding meanings.
+
+### 4. Search and Save Vocabulary
+
+- Use the Search feature to look up English words.
+- View definitions and related information.
+- Save important words to favorite collections.
+- Access saved vocabulary for later review.
+
+### 5. Track Learning Progress
+
+Open the Dashboard to monitor:
+
+- Total learned vocabulary
+- Words requiring review
+- Daily learning goals
+- Study time
+- Weekly learning progress
+- Learning streaks
+
+### 6. Customize Settings
+
+Users can configure:
+
+- Application language
+- Sound and pronunciation preferences
+- Daily study reminders
+- Light and dark appearance
+- Account settings
+
+## Application Architecture
+
+WordMate organizes its source code into separate components to improve maintainability and code organization.
+
+| Component | Responsibility |
+|-----------|----------------|
+| Activities | Manage application screens and user interactions |
+| Fragments | Handle navigation and reusable UI components |
+| Adapters | Display vocabulary lists and other data using RecyclerView |
+| Models | Represent vocabulary and application data |
+| Repositories | Manage data retrieval, persistence, and synchronization |
+| Network | Handle external API requests using Retrofit |
+| Receivers | Handle notifications and system events |
+| Utils | Provide reusable helper functions |
+
+### Data Sources
+
+WordMate uses the following data sources:
+
+**Local Vocabulary Data**
+
+The application includes a vocabulary dataset stored at:
+
+```text
+app/src/main/assets/vocabulary.json
+```
+
+**External Dictionary APIs**
+
+- [Free Dictionary API](https://dictionaryapi.dev/) - Provides English word definitions and pronunciation information.
+- [Datamuse API](https://www.datamuse.com/api/) - Provides word suggestions and related vocabulary.
+
+**Firebase Services**
+
+- Firebase Authentication for account management.
+- Firebase Realtime Database for supported user data synchronization.
+
+## Screenshots
+
+Application screenshots will be added soon.
+
+## Author
+
+Developed by [thule05](https://github.com/thule05).
+
+## License
+
+No license has been specified for this project. Please contact the repository owner for permission before reusing or redistributing the source code.
