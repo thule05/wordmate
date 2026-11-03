@@ -233,14 +233,60 @@ app/src/main/assets/vocabulary.json
 - Firebase Authentication for account management.
 - Firebase Realtime Database for supported user data synchronization.
 
-## Screenshots
 
-Application screenshots will be added soon.
+
+<h2>Screenshots</h2>
+
+<h3>Authentication & Learning</h3>
+
+<table align="center">
+  <tr>
+    <td align="center" width="25%">
+      <img src="screenshots/login.png" width="150" alt="Login Screen"/>
+      <br/>
+      <sub><b>Login</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="screenshots/home.png" width="150" alt="Home Screen"/>
+      <br/>
+      <sub><b>Home</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="screenshots/vocabulary.png" width="150" alt="Vocabulary Screen"/>
+      <br/>
+      <sub><b>Vocabulary</b></sub>
+    </td>
+    <td align="center" width="25%">
+      <img src="screenshots/flashcards.png" width="150" alt="Flashcards Screen"/>
+      <br/>
+      <sub><b>Flashcards</b></sub>
+    </td>
+  </tr>
+</table>
+
+<h3>Practice & Progress</h3>
+
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="screenshots/game.png" width="150" alt="Games Screen"/>
+      <br/>
+      <sub><b>Games</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/dashboard1.png" width="150" alt="Dashboard Screen"/>
+      <br/>
+      <sub><b>Dashboard</b></sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="screenshots/dashboard2.png" width="150" alt="Statistics Screen"/>
+      <br/>
+      <sub><b>Statistics</b></sub>
+    </td>
+  </tr>
+</table>
+
 
 ## Author
+[@thule05](https://github.com/thule05) 
 
-Developed by [thule05](https://github.com/thule05).
-
-## License
-
-No license has been specified for this project. Please contact the repository owner for permission before reusing or redistributing the source code.
