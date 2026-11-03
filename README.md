@@ -26,7 +26,10 @@ Image loading	Glide
 Build tools	Gradle, Android Gradle Plugin
 
 
+
 ## Project Structure
+
+```text
 wordmate/
 ├── app/
 │   ├── src/main/
@@ -38,18 +41,20 @@ wordmate/
 │   │   │   ├── network/          # API clients and services
 │   │   │   ├── repositories/     # Data access and persistence
 │   │   │   ├── receivers/        # Notification and boot receivers
-│   │   │   └── utils/            # Shared helpers and utilities
+│   │   │   └── utils/            # Shared utilities
 │   │   ├── assets/
-│   │   │   └── vocabulary.json   # Bundled vocabulary by topic
-│   │   ├── res/                  # XML layouts, drawables, and strings
+│   │   │   └── vocabulary.json
+│   │   ├── res/
 │   │   └── AndroidManifest.xml
-│   ├── google-services.json     # Firebase app configuration
-│   └── build.gradle.kts         # Android module configuration
-├── gradle/                      # Gradle wrapper and version catalog
-├── build.gradle.kts             # Root build configuration
+│   ├── google-services.json
+│   └── build.gradle.kts
+├── gradle/
+├── build.gradle.kts
 ├── settings.gradle.kts
 ├── gradlew
 └── gradlew.bat
+```
+
 
 ## Getting Started
 Prerequisites
